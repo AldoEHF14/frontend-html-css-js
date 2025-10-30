@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Time Pendulum</title>
+</head>
+<body>
+    <!-- Transition of Pendulum -->
+    <h2 class="content"> This is a Time Pendulum </h2>
+
+    <!-- FAQ Accordion -->
+    <div class="faq-item">
+        <div class="faq-question">
+            What is a pendulum?
+        </div>
+        <div class="faq-asnwer">
+            A pendulum is an object suspended from a fixed point that swings back and forth due to gravity.
+        </div>
+    
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            On the invention of the Foucault pendulum
+        </div>
+        <div class="faq-asnwer">
+            Foucault discovered the principle of the pendulum by chance: he was working on his lathe with a 
+            metal rod about one meter long, when by accident the tip of the rod began to vibrate in one direction 
+       </div>
+    
+    </div>
+
+    <!-- Pendulum clock -->
+    <div class="clock" aria-label="Pendulum clock">
+        <div class="face" id="face">
+            <div class="tick" style="transform:rotate(0deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(30deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(60deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(90deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(120deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(150deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(180deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(210deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(240deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(270deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(300deg) translateY(-64px)"></div>
+            <div class="tick" style="transform:rotate(330deg) translateY(-64px)"></div>
+            <div class="hand hour" id="hour"></div>
+            <div class="hand minute" id="minute"></div>
+            <div class="hand second" id="second"></div>
+            <div class="center-cap"></div>
+        </div>
+        <div class="pendulum" aria-hidden="true">
+            <div class="bob" aria-hidden="true"></div>
+        </div>
+    </div>
+<script src="script.js"></script>
+    
+</body>
+</html>
