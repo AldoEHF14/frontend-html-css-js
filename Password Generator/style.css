@@ -1,0 +1,73 @@
+:root{
+    --color-primary:  rgb(39, 77, 91);
+    --color-two: #2d86a4;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-two));
+}
+
+.box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 420px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  color: #1e293b;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  background: var(--color-two);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%;
+  transition: background 0.3s;
+  
+}
+
+button:hover {
+  /* background: #0284c7; */
+  cursor: pointer;
+  opacity: 0.7; /* El elemento se vuelve 70% opaco (30% transparente) */
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
