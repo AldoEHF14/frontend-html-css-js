@@ -1,0 +1,119 @@
+/* === General === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* === Variables modo claro/oscuro === */
+:root {
+  --bg: #f0f4f8;
+  --text: #1e293b;
+  --box-bg: #ffffff;
+  --box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  --input-bg: #ffffff;
+  --task-bg: #f9fafb;
+}
+body.dark {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --box-bg: #1e293b;
+  --box-shadow: 0 4px 20px rgba(255,255,255,0.05);
+  --input-bg: #334155;
+  --task-bg: #475569;
+}
+
+/* === Caja principal === */
+.todo-box {
+  background: var(--box-bg);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+  width: 300px;
+  transition: all 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#themeToggle {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: var(--input-bg);
+  color: var(--text);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+/* === Lista === */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+li {
+  background: var(--task-bg);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+li small {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+#clearAll {
+  background: #ef4444;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+#clearAll:hover {
+  background: #dc2626;
+}

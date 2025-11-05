@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo-box">
+    <div class="header">
+      <h2>📝 My To-Do List</h2>
+      <button id="themeToggle">🌞</button>
+    </div>
+
+    <input type="text" id="taskinput" placeholder="Add a task..." onkeypress="handleKey(event)">
+    
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search task...">
+      <select id="filterSelect">
+        <option value="all">All</option>
+        <option value="pending">Pending</option>
+        <option value="done">Completed</option>
+      </select>
+    </div>
+
+    <ul id="taskList"></ul>
+    <button id="clearAll">🗑️ Clear All</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
