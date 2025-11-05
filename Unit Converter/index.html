@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌍 Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter">
+    
+    <div class="header">
+      <h3>🌍 Unit Converter</h3>
+      <button id="themeToggle" title="Toggle Theme">🌞</button>
+    </div>
+
+    <input type="number" id="inputValue" placeholder="Enter value">
+
+    <div class="row">
+      <label for="type">Type:</label>
+      <select id="type" onchange="updateUnits()">
+        <option value="length">Length</option>
+        <option value="weight">Weight</option>
+        <option value="temperature">Temperature</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>Convert</label>
+      <select id="fromUnit"></select>
+      <span>to</span>
+      <select id="toUnit"></select>
+    </div>
+
+    <button onclick="convert()">Convert</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
